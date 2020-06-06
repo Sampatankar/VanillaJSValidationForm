@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/*Custom CSS for success/error colours:*/
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  /* No padding will affect width of the element: */
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Open Sans", sans-serif;
+  /*easily place items vertically and horizontally: flex */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/*Styling of the box around form*/
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/*Add padding to the box*/
+.form {
+  padding: 30px 40px;
+}
+
+/*Apply spacings to the input box as a whole*/
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+/*Change the input div colours*/
+.form-control label {
+  color: #777;
+  display: block; /*inline by default!*/
+  margin-bottom: 5px;
+}
+
+/*Apply spacings to the input box inputs*/
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/*Make the input box darken when you click in it*/
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+/*Border colour of input on 'success'*/
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+/*Border colour of input on 'error'*/
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+/*Small lettering*/
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.form-control.error small {
+  visibility: pointer;
+}
+
+/*button styling*/
+.form button {
+  cursor: pointer;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
