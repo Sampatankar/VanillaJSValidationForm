@@ -1,4 +1,4 @@
-# VanillaJSValidationForm
+# VanillaJSValidationForm - 1/20
 Basic vanilla JavaScript validation form
 
 This project is the first project in 20 Web Projects with Vanilla JavaScript by Brad Traversy on Udemy.com
